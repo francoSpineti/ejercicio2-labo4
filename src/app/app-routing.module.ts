@@ -5,9 +5,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+    {path : '', pathMatch : 'full', redirectTo : 'login'},
     {path : 'bienvenido',component: BienvenidoComponent},
     {path : 'login',component: LoginComponent},
-    {path : '', redirectTo : 'login', pathMatch : 'full'},
     {path : '**',component: ErrorComponent}
 ];
 
